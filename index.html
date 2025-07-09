@@ -1,0 +1,58 @@
+!<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        description="WDD131 Dynamic Web Fundamentals, My name is Ezekiel Edem i am living in Nigeria, and also studying Web Programming ">
+    <meta name="author" content="Ezekiel Edem">
+    <title>"WDD 131-Dynamic Web Fundamentals-Ezekiel Edem".
+<link rel="stylesheet" href="styles/base.css">
+<script src="scripts/getdates.js" defer></script>
+
+    </title>
+</head>
+
+<body>
+    <header>
+        <span id="course title" content="WDD131 Dynamic Web Fundamentals"></span>
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/ezekiel-edem-a87322373" target="_blank">linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank"><canvas></a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                        target="_blank">scriptures</a></li>
+                <li><a href="#" final project folder></a></li>
+            </ul>
+        </nav>
+        <main>
+            <hi>Ezekiel Edem</hi>
+
+            <search class="card">
+                <h2> about me </h2>
+                <img src="images/my-photo.jpg" alt="A rare photo of me" width="300">
+                <p>My name is Ezekiel Edem and i am currently studying WDD 131 Web Dynamic Fundamentals</p>
+            </search>
+
+            <search class="card">
+                <h2> My hobbies </h2>
+                <img src="images/reading.jpg" alt="Favorite hobbies" width="300">
+                <p>I love reading and making new researches, and recently coding as become a part</p>
+            </search>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"> Ezekiel Edem| Nigeria </span>
+            <p id="lastModified"></p>
+        </footer>
+
+        <script>
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+        </script>
+
+    </header>
+
+</body>
+
+</html>
