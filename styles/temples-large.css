@@ -1,0 +1,16 @@
+/* Applies to larger screens */
+#hamburgerBtn {
+  display: none;
+}
+
+nav {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  background: none;
+}
+
+.album {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
