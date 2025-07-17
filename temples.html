@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
     <meta name="description" content="A photo album of temples.">
-  <meta name="author" content="Your Name">
+  <meta name="author" content="Ezekiel Edem">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
-  >
+  
     <script src="scripts/getdates.js" defer></script>
 
 </head>
@@ -19,18 +19,18 @@
     <header>
         <h1>"Temple Album"</h1>
         <button id="hamburgerBtn">☰</button>
-        <nav id="navMenu">
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Old</a>
-        <a href="#">New</a>
-        <a href="#">Large</a>
-        <a href="#">Small</a>
-    </nav>
- </header>
+        <nav id="navMenu" class="hide"> </nav>
+            <a href="#">Home</a>
+           <a href="#">Old</a>
+           <a href="#">New</a>
+           <a href="#">Large</a>
+           <a href="#">Small</a>
+        </nav>
+    </header>
     <main>
+
         <h1>Temple Album</h1>
-        <section class="Album">
+        <section class="album">
             <figure>
                 <img src="images/temple1.png" alt="temple1">
                 <figcaption> Crystal Temple </figcaption>
@@ -63,7 +63,7 @@
                 <img src="images/temple8.png" alt="temple8">
                 <figcaption> Holy Shrine Temple </figcaption>
             </figure>
-            figure>
+            <figure>
                 <img src="images/temple9.png" alt="temple9">
                 <figcaption> Mountain Temple </figcaption>
             </figure>
@@ -71,8 +71,17 @@
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> | Ezekiel Edem | Last Modified: 07/16/2025  <span id="lastModified"></span></p>
+       <p>&copy; <span id="currentYear"></span> | Temples Album</p>
+  <p id="lastModified"></p>
     </footer>
+    <script>
+  // Copyright year
+  const yearSpan = document.getElementById("currentYear");
+  yearSpan.textContent = new Date().getFullYear();
 
+  // Last modified
+  const modified = document.getElementById("lastModified");
+  modified.textContent = `Last Modified: ${document.lastModified}`;
+</script>
 </body>
 </html>

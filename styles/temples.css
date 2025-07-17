@@ -59,8 +59,9 @@ main {
 }
 
 figure {
-  background: white;
-  padding: 0.5rem;
+  background: #1a1a1a; /* darker background for contrast */
+  color: white;
+ padding: 0.5rem;
   border-radius: 5px;
   box-shadow: 0 0 5px #ccc;
   text-align: center;
@@ -78,4 +79,7 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+.hide {
+  display: none;
 }
