@@ -1,0 +1,95 @@
+/* General reset and font */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#hamburgerBtn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #34495e;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active,
+nav a:focus {
+  background-color: #1abc9c;
+}
+
+main {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* Temple card for dynamic JS rendering */
+.temple-card {
+  background: #1a1a1a;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.temple-card:hover {
+  box-shadow: 0 0 15px #1abc9c;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.hide {
+  display: none;
+}
