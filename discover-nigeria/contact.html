@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Discover Nigeria</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Discover Nigeria</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Contact Us</h2>
+      <p>We would love to hear from you! Send us your questions or feedback below.</p>
+    </section>
+
+    <section class="contact-form">
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Type here..." rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Discover Nigeria</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
